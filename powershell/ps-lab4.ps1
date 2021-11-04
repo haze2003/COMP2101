@@ -91,6 +91,7 @@ function diskInfo {
       }
   }
   }
+
 # Use network adapter info from Lab 3 to create network adapter information function
 function netAdaptInfo {
                         $netadapt=(Get-CimInstance Win32_NetworkAdapterConfiguration)
@@ -103,6 +104,7 @@ function netAdaptInfo {
 
                        }
 
+# Create video adapter information function
 function videoInfo { 
                     $vidInfo=("Description","AdapterCompatibility")
                     
